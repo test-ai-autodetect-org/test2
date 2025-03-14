@@ -1,5 +1,17 @@
 package com.acme.multilingual;
 
+class OverflowException extends RuntimeException {
+    public OverflowException(String message) {
+        super(message);
+    }
+}
+
+class UnderflowException extends RuntimeException {
+    public UnderflowException(String message) {
+        super(message);
+    }
+}
+
 public class Test {
 
     public int add(int a, int b) {
