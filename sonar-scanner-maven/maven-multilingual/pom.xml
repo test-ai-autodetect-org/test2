@@ -31,7 +31,7 @@
       <artifactId>kotlin-stdlib-jdk8</artifactId>
       <version>${kotlin.version}</version>
     </dependency>
-    <dependency>
+<dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>5.8.2</version>
@@ -117,7 +117,7 @@
           <jvmTarget>1.8</jvmTarget>
         </configuration>
       </plugin>
-          </plugins>
+    </plugins>
   </build>
 
   <profiles>
