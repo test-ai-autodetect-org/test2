@@ -4,10 +4,10 @@ import java.util.logging.Logger;
 
 public class Test {
   private static final Logger logger = Logger.getLogger(Test.class.getName());
-  private static final String UNUSED_CONSTANT = "UNUSED"; // Unused variable
+  // Removed unused constant
 
   public static void main(String[] args) {
-    int unusedVariable = 42; // Unused variable
+    // Removed unused variable
     if (args.length > 0) {
       for (String arg : args) {
         logger.info(String.format("Argument: %s", arg));
@@ -20,12 +20,12 @@ public class Test {
     System.out.println("Welcome to the multilingual application.");
     
     try {
-      int result = 10 / 0; // Division by zero
+      int result = 10 / 1; // Avoid division by zero
     } catch (Exception e) {
-      e.printStackTrace(); // Poor exception handling
+      logger.severe("An error occurred: " + e.getMessage()); // Improved exception handling
     }
     
-    String hardcodedPassword = "password123"; // Hardcoded password
+    String hardcodedPassword = System.getenv("APP_PASSWORD"); // Avoid hardcoded password
   }
   
 }
