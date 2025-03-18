@@ -10,7 +10,9 @@ public class Test {
     // Removed unused variable
     if (args.length > 0) {
       for (String arg : args) {
-        logger.info(String.format("Argument: %s", arg));
+        if (logger.isLoggable(java.util.logging.Level.INFO)) {
+          logger.info(String.format("Argument: %s", arg));
+        }
       }
     } else {
       logger.info("No arguments provided.");
