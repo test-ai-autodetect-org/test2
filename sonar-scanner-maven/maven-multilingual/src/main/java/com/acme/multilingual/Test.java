@@ -22,9 +22,16 @@ public class Test {
     logger.info("Welcome to the multilingual application.");
     
     try {
-      int result = 10 / 1; // Avoid division by zero
+      int divisor = 1; // Example divisor
+      if (divisor == 0) {
+        throw new ArithmeticException("Division by zero is not allowed.");
+      }
+      int result = 10 / divisor;
+      logger.info("Division result: " + result);
+    } catch (ArithmeticException e) {
+      logger.severe("An arithmetic error occurred: " + e.getMessage());
     } catch (Exception e) {
-      logger.severe("An error occurred: " + e.getMessage()); // Improved exception handling
+      logger.severe("An unexpected error occurred: " + e.getMessage());
     }
     
     // Removed unused variable 'hardcodedPassword'
