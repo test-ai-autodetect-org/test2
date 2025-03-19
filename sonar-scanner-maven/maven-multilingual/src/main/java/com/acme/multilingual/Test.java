@@ -27,7 +27,7 @@ public class Test {
       logger.severe("An error occurred: " + e.getMessage()); // Improved exception handling
     }
     
-    String hardcodedPassword = System.getenv("APP_PASSWORD"); // Avoid hardcoded password
+    // Removed unused variable 'hardcodedPassword'
   }
   
 }

@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "https-sonar-ee-curvc-com",
+        "projectKey": "test-ai-autodetect-org_test2_e97f2662-aa0d-4555-9952-80b6738074e3"
+    }
+}
