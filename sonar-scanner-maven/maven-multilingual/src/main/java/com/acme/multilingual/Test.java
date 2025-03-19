@@ -22,7 +22,7 @@ public class Test {
     logger.info("Welcome to the multilingual application.");
     
     try {
-      int divisor = 1; // Example divisor
+      int divisor = args.length > 0 ? Integer.parseInt(args[0]) : 1; // Example divisor from input or default
       if (divisor == 0) {
         throw new ArithmeticException("Division by zero is not allowed.");
       }
