@@ -27,7 +27,9 @@ public class Test {
         throw new ArithmeticException("Division by zero is not allowed.");
       }
       int result = 10 / divisor;
-      logger.info(String.format("Division result: %d", result));
+      if (logger.isLoggable(java.util.logging.Level.INFO)) {
+        logger.info(String.format("Division result: %d", result));
+      }
     } catch (ArithmeticException e) {
       logger.severe("An arithmetic error occurred: " + e.getMessage());
     } catch (Exception e) {
