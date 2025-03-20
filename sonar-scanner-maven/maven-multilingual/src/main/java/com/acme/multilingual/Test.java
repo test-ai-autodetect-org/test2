@@ -9,6 +9,13 @@ public class HelloWorldTest {
   public void sayHello() {
     new HelloWorld().sayHello();
   }
-}
 
+  @Test
+  public void testGreeting() {
+    HelloWorld helloWorld = new HelloWorld();
+    String greeting = helloWorld.getGreeting();
+    assertNotNull("Greeting should not be null", greeting);
+    assertEquals("Hello, World!", greeting);
+  }
+}
 
