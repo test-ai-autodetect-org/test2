@@ -12,10 +12,14 @@ public class HelloWorld {
     helloWorld.sayHello();
   }
 
-    void notCovered() {
+  void notCovered() {
     System.out.println("This method is not covered by unit tests.");
   }
 
-  
+  // Adding a SonarQube issue: Hardcoded credentials
+  void insecureMethod() {
+    String password = "12345"; // Noncompliant: Hardcoded password
+    System.out.println("Password is:... " + password);
+  }
 
 }
