@@ -19,7 +19,7 @@ public class HelloWorld {
   // Adding a SonarQube issue: Hardcoded credentials
   void insecureMethod() {
     String password = "12345"; // Noncompliant: Hardcoded password
-    System.out.println("Password is:... " + password);
+    System.out.println("Password idds:... " + password);
   }
 
 }
