@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app
+  namespace: connect
+data:
+  MYSQL_PASSWORD: 896fy9q3!$yq7u9wa!@sady
+  MYSQL_URL: mysql://root:TRWIUFA12312F@$~sdf@mysql:3306/database
