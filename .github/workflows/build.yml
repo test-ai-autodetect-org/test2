@@ -37,4 +37,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: cd sonar-scanner-maven/maven-multilingual && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=test-ai-autodetect-org_test2_91b1943d-3704-4da6-b180-41329a618888 -Dsonar.projectName='test2'
+        run: cd sonar-scanner-maven/maven-multilingual && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=test-ai-autodetect-org_test2_6c923b1e-b22c-4184-987b-cd59acbb1806 -Dsonar.projectName='test2
